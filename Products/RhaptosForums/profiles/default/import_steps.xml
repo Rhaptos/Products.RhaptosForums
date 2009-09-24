@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="rhaptosforums-setup" version="20090924-01"
+      handler="Products.RhaptosForums.setuphandlers.setupRhaptosForums"               title="Setup RhaptosForums">
+      Setup for RhaptosForums
+  </import-step>
+</import-steps>
