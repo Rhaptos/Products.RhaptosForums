@@ -12,6 +12,5 @@ from Products.CMFCore.DirectoryView import registerDirectory
 
 from config import SKINS_DIR, GLOBALS, PROJECTNAME
 
-from Extensions import Install  # check syntax on startup
 
 registerDirectory(SKINS_DIR, GLOBALS)
