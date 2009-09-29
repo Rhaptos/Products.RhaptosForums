@@ -10,6 +10,13 @@ def setupRhaptosForums(context):
     portal = context.getSite()
     portal_quickinstaller = getToolByName(portal, 'portal_quickinstaller')
     portal_types = getToolByName(portal, 'portal_types')
+    portal_setup = getToolByName(portal, 'portal_setup')
+
+    import_context = portal_setup.getImportContextID()
+    portal_setup.setImportContext(
+            'profile-Products.SimpleAttachment:SimpleAttachment')
+    portal_setup.runAllImportSteps()
+    import_context = portal_setup.getImportContextID()
 
     registerAttachmentsFormControllerActions(portal)
     registerImagesFormControllerActions(portal)
