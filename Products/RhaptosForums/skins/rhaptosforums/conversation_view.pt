@@ -20,9 +20,8 @@
   <metal:css fill-slot="css_slot">
     <style type="text/css" media="all"
            tal:content="string: @import url($portal_url/ploneboard.css);"></style>
-    <style type="text/css" media="all">
-           iframe.kupu-editor-iframe { height: 200px !important; }
-    </style>
+    <style type="text/css" media="all"
+           tal:content="string: @import url($portal_url/rhaptosforums.css);"></style>
   </metal:css>
 </head>
 
@@ -56,7 +55,7 @@
         tal:define="parent_title here/Title;
                     batch view/comments">
 
-      <div tal:repeat="comment batch">
+      <div class="comment-wrapper" tal:repeat="comment batch">
         <metal:comment metal:use-macro="here/comment_view/macros/comment" />
       </div>
       

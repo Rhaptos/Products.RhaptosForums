@@ -159,7 +159,6 @@
     </tal:attach>
 
     <div>     
-      <br/> 
       <form tal:condition="comment/canReply"
             tal:attributes="action string:${comment/absolute_url}/add_comment_form#${comment/getId}">
         <input type="hidden" name="title" value="" tal:attributes="value comment/Title"/>
@@ -181,7 +180,6 @@
                />
       </form>
     </div>
-    <br />
         
           
       </metal:comment>

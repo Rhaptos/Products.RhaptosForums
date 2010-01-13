@@ -1,0 +1,16 @@
+iframe.kupu-editor-iframe {
+  height: 200px !important;
+}
+
+.comment-wrapper {
+  background: #e6edf2;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+.comment-wrapper hr {
+  visibility: hidden;
+}
+
+.boardCommentContent br {
+  line-height: 1px;
+}
