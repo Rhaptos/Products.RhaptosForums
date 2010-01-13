@@ -1,0 +1,4 @@
+RhaptosForums-0.1
+  - Create a new product to subclass ContentSelectionLens from Lensmaker to enable a 
+    PloneboardForum to be contained in the ContentSelectionLens to enable discussion
+    on the lens. Also add configuration of the product

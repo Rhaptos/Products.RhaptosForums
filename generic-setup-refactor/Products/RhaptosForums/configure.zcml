@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Products.RhaptosForums"
+      directory="profiles/default"
+      description="Extension profile for Products.RhaptosForums."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+ 
+  <!-- 
+    Re-enable when we hit Plone3. Until such time we subscribe to
+    our own custom event which emulates that functionality. See the
+    subscriber below.
+  <subscriber
+    for="Products.Lensmaker.ContentSelectionLens.ContentSelectionLens
+         Products.DCWorkflow.interfaces.IAfterTransitionEvent"
+    handler=".events.afterTransitionContentSelectionLens" 
+  />
+  -->
+
+  <include package=".browser" />
+
+  <subscriber
+    for="Products.Lensmaker.ContentSelectionLens.ContentSelectionLens
+         Products.Lensmaker.browser.interfaces.IAfterTransitionEvent"
+    handler=".events.afterTransitionContentSelectionLens" 
+  />
+
+</configure>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+    <permission name="Ploneboard: Add Forum" acquire="True">
+      <role name="Manager"/>
+    </permission>
+    <permission name="Ploneboard: Add Comment" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Member"/>
+    </permission>
+    <permission name="Ploneboard: Add Comment Attachment" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Member"/>
+    </permission>
+    <permission name="Ploneboard: Add Conversation" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Member"/>
+    </permission>
+  </permissions>
+</rolemap>

@@ -1,0 +1,7 @@
+[default]
+title=Added Forum
+proxy=Anonymous,Manager
+
+[actions]
+action.success=redirect_to:string:workgroup_forum/view
+action.failure=redirect_to_action:string:
