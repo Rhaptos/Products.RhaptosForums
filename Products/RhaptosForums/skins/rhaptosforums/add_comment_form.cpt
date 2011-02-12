@@ -105,8 +105,7 @@
               <tal:editor define="inputname  string:text;
                                   formname   string:add_comment_form;
                                   inputvalue text;
-                                  cooked_inputvalue string:;
-                                  tabindex   nothing">
+                                  cooked_inputvalue string:">
                 <div metal:use-macro="context/wysiwyg_support/macros/wysiwygEditorBox">
                   The WYSIWYG code
                 </div>
