@@ -75,6 +75,7 @@
             <div metal:use-macro="here/add_comment_form/macros/comment_body_attachments" tal:omit-tag="" />
 
             <input type="hidden" name="form.submitted" value="1" />
+            <input tal:replace="structure context/@@authenticator/authenticator" />
             <div class="formControls">
               <input class="context"
                      name="form.button.Post" 
